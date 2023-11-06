@@ -135,6 +135,11 @@ class CarInterface(CarInterfaceBase):
       ret.steerRatio = 14.2  # steering ratio according to Hyundai News https://www.hyundainews.com/assets/documents/original/48035-2022SantaCruzProductGuideSpecsv2081521.pdf
 
     # Kia
+    elif candidate == CAR.K7_YG:
+      ret.mass = 1700. + STD_CARGO_KG  
+      ret.wheelbase = 2.858
+      ret.steerRatio = 14.5
+      tire_stiffness_factor = 0.07
     elif candidate == CAR.KIA_SORENTO:
       ret.mass = 1985. + STD_CARGO_KG
       ret.wheelbase = 2.78
